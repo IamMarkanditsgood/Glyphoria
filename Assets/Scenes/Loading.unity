@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38683018, y: 0.10928183}
   m_AnchorMax: {x: 0.61303294, y: 0.12485431}
-  m_AnchoredPosition: {x: 0, y: -0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0.000091552734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75681360
@@ -255,12 +255,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30018d81ff8632641930261a423d0130, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8aab1f0d56a33e743870ea7af5db820f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7665d9c7297994c8ca8964c08dfb0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Game
+  sceneName: MainMenu
   progressText: {fileID: 2040502162}
   progressBar: {fileID: 273590100}
 --- !u!1 &2040502160
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 75%
+  m_text: 0%
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b4fa95f3b50dad94dafc427442d5ed68, type: 2}
   m_sharedMaterial: {fileID: 42478578941784838, guid: b4fa95f3b50dad94dafc427442d5ed68, type: 2}

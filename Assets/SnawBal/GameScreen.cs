@@ -15,6 +15,8 @@ public class GameScreen : MonoBehaviour
 
     [SerializeField] private TMP_Text _score;
     [SerializeField] private TMP_Text _coins;
+    [SerializeField] private TMP_Text _coinsLose;
+
 
     private TextManager _textManager = new TextManager();
     int seconds;
@@ -66,6 +68,11 @@ public class GameScreen : MonoBehaviour
         {
             PlayerPrefs.SetInt("MaxSnowBalls", PlayerPrefs.GetInt("CurrentRecord"));
         }
+    }
+
+    public void Lose()
+    {
+        _coinsLose.text ="+" +  newResult;
     }
 
     private IEnumerator ScoreTimer()

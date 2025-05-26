@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BallJump : MonoBehaviour
@@ -11,6 +12,8 @@ public class BallJump : MonoBehaviour
     [SerializeField] private LayerMask ceilingLayer; // Слой, на котором находится потолок
 
     [SerializeField] private GameObject _loseView;
+    [SerializeField] private GameScreen gameScreen;
+
     private Rigidbody2D rb;
     private float ballHeight;
 
@@ -69,6 +72,7 @@ public class BallJump : MonoBehaviour
         {
             PlayerPrefs.SetInt("FirstAchieve", 1);
             _loseView.SetActive(true);
+            gameScreen.Lose();
             Time.timeScale = 0;
         }
     }
